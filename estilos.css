@@ -3,7 +3,46 @@ html, body, h1, h2, ul, li, a, figure {
     padding: 0;
     font-family: Calibri, Arial, Helvetica, sans-serif;
 }
- 
+
+header {
+    background-color: #2c2c2c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    width: 80px;
+    height: 70px;
+}
+
+header a h2 {
+    color: #e67e22;
+    font-size: 32px;
+    padding-top: 6px;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #cccccc;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
 nav {
     background-color: #1c1c1c;
     padding-top: 8px;
@@ -11,11 +50,11 @@ nav {
     padding-right: 40px;
     text-align: right;
 }
- 
+
 nav ul li {
     display: inline-block;
 }
- 
+
 nav ul li a {
     font-size: 18px;
     color: #cccccc;
@@ -24,7 +63,7 @@ nav ul li a {
     padding-left: 15px;
     text-decoration: none;
 }
- 
+
 nav ul li a:hover {
     background-color: #e67e22;
     padding-top: 8px;
@@ -32,48 +71,7 @@ nav ul li a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
- 
-header {
-    background-color: #2c2c2c;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    text-align: center;
-}
- 
-header a {
-    text-decoration: none;
-}
- 
-header img {
-    width: 80px;
-    height: 70px;
-}
- 
-header a h2 {
-    color: #e67e22;
-    font-size: 32px;
-    padding-top: 6px;
-}
- 
-header p {
-    color: #aaaaaa;
-    font-size: 18px;
-    padding-top: 4px;
-}
- 
-.banner {
-    width: 100%;
-    height: 220px;
-    background-color: #2c2c2c;
-    overflow: hidden;
-}
- 
-.banner img {
-    width: 100%;
-    height: 220px;
-}
- 
+
 main article {
     margin-left: 80px;
     margin-right: 80px;
@@ -82,27 +80,39 @@ main article {
     border-left: 5px solid #e67e22;
     padding-left: 20px;
 }
- 
+
 main article h1 {
     font-size: 36px;
     text-align: left;
     color: #2c2c2c;
     padding-bottom: 10px;
 }
- 
+
 main article h2 {
     font-size: 26px;
     color: #e67e22;
     margin-top: 20px;
     margin-bottom: 8px;
 }
- 
+
 main article p {
     font-size: 20px;
     text-align: justify;
 }
- 
-.img-gerente {
+
+.imagen_banner {
+    width: 100%;
+    height: 220px;
+    background-color: #2c2c2c;
+    overflow: hidden;
+}
+
+.imagen_banner img {
+    width: 100%;
+    height: 220px;
+}
+
+.foto_jefe {
     width: 200px;
     height: 180px;
     border: 2px solid #e67e22;
@@ -110,28 +120,28 @@ main article p {
     margin-left: 30px;
     margin-bottom: 10px;
 }
- 
-.datos-empresa p {
+
+.info_empresa p {
     font-size: 20px;
     margin-top: 14px;
 }
- 
-.datos-empresa strong {
+
+.info_empresa strong {
     color: #2c2c2c;
 }
- 
-.img-empresa {
+
+.foto_local {
     width: 100%;
     height: 200px;
     border: 2px solid #e67e22;
     margin-top: 10px;
 }
- 
-.galeria {
+
+.caja_productos {
     overflow: hidden;
 }
- 
-.producto {
+
+.tarjeta {
     width: 45%;
     height: 220px;
     border: 2px solid #cccccc;
@@ -143,11 +153,180 @@ main article p {
     padding-top: 14px;
     background-color: #f9f9f9;
 }
- 
-.producto img {
+
+.tarjeta img {
     width: 160px;
     height: 140px;
     border: 2px solid #cccccc;
     float: left;
     margin-right: 14px;
+}
+
+.tarjeta h3 {
+    font-size: 20px;
+    color: #2c2c2c;
+    margin-bottom: 6px;
+}
+
+.tarjeta .valor {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.tarjeta p {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 6px;
+}
+
+.tarjeta label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tarjeta input[type="number"] {
+    width: 60px;
+    height: 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.caja_login {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.caja_login h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+.caja_login label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.controles {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.botones {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #e67e22;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.columna_footer {
+    width: 48%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.columna_footer strong {
+    color: #e67e22;
+}
+
+.pie_footer {
+    color: #444444;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    clear: both;
+    border-top: 1px solid #333333;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        padding-left: 0;
+    }
+
+    header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    main article {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-left: 3px solid #e67e22;
+    }
+
+    main article h1 {
+        font-size: 28px;
+    }
+
+    main article h2 {
+        font-size: 22px;
+    }
+
+    main article p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .foto_jefe {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    .tarjeta {
+        width: 100%;
+        height: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    .caja_login {
+        width: 90%;
+    }
+
+    .columna_footer {
+        width: 100%;
+        float: none;
+    }
 }
